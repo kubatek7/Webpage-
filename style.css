@@ -1,0 +1,186 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+}
+/* Navigation Bar */
+
+.navigationBar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: sticky;
+  top: 0;
+}
+.navigationBar::before {
+  content: "";
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+}
+
+.navigationBar ul {
+  display: flex;
+  list-style: none;
+}
+.navigationBar ul li {
+  font-size: 1rem;
+}
+.navigationBar ul li a {
+  padding: 5px 20px;
+  text-decoration: none;
+  color: rgb(250, 250, 250);
+}
+.navigationBar ul li a:hover {
+  cursor: pointer;
+  opacity: 0.5;
+}
+.mediaIcons a {
+  color: rgb(250, 250, 250);
+  font-size: 1.5rem;
+}
+.mediaIcons a:hover {
+  cursor: pointer;
+  opacity: 0.5;
+}
+
+/* Hero Section */
+#hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 650px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: rgb(250, 250, 250);
+}
+#hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: url(./image/hero-bg.jpg) no-repeat center center/cover;
+  height: 700px;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.8;
+}
+.heading {
+  font-size: 1.5rem;
+  text-align: center;
+  margin: 50px;
+  color: rgb(211, 211, 211);
+}
+#hero .heading i {
+  animation: blinker 1s step-start infinite;
+}
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+
+/* Portfolio Section */
+#portfolio {
+  display: flex;
+  flex-direction: column;
+  height: 650px;
+  background-color: rgb(26, 26, 26);
+  text-align: center;
+}
+#portfolio h1 {
+  margin: 60;
+}
+#portfolio p {
+  color: white;
+  margin: 60;
+}
+.gallery {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.gallery img {
+  width: 200px;
+  height: 280px;
+  padding: 10px;
+  margin: 50px;
+}
+.gallery img:hover {
+  background-color: white;
+  cursor: pointer;
+}
+/* About Me Section */
+#about h1 {
+  color: black;
+  margin: 20px;
+  height: 100%;
+}
+.about {
+  display: flex;
+  align-items: center;
+  margin-bottom: 200px;
+}
+.about img {
+  width: 500px;
+  height: 400px;
+  padding: 0px 30px;
+}
+.name {
+  padding: 10px;
+}
+.name h2 {
+  font-size: 2rem;
+}
+.name p {
+  font-size: 1.2rem;
+}
+/* Contact Section */
+#contact {
+  display: flex;
+  flex-direction: column;
+  background-color: #000000dc;
+}
+#contact h1 {
+  margin: 50px;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.input {
+  padding: 15px 20px;
+  margin: 15px;
+  width: 40%;
+  border: none;
+  outline: none;
+  border-radius: 25px;
+}
+#message {
+  margin: 15px;
+  padding: 10px;
+  border-radius: 20px;
+}
+#submit {
+  padding: 15px 20px;
+  margin: 30px;
+  width: 15%;
+  border-radius: 20px;
+  background-color: #000000dc;
+  color: white;
+  border: none;
+  outline: none;
+}
+#submit:hover {
+  background-color: green;
+  color: white;
+  cursor: pointer;
+}

@@ -1,0 +1,4 @@
+.columns {
+  grid-template-columns: auto;
+  justify-content: center;
+}

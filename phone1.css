@@ -1,0 +1,35 @@
+/* Navbar */
+.navbar ul {
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* Headings */
+.heading {
+  font-size: 1.3rem;
+}
+
+/* Gallery Images */
+.gallery img {
+  width: 100px;
+  height: 175px;
+}
+
+/* About Section */
+.about {
+  flex-direction: column;
+}
+.about h2 {
+  text-align: center;
+}
+
+.about img {
+  width: 200px;
+  height: 150px;
+  padding: 0px 15px;
+}
+/* Message box */
+#message {
+  width: 40%;
+  height: 200px;
+}
