@@ -76,6 +76,8 @@ html {
   text-align: center;
   margin: 50px;
   color: rgb(211, 211, 211);
+}
+#hero h1 {
   white-space: nowrap;
   overflow: hidden;
   width: 30em;
