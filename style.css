@@ -76,7 +76,17 @@ html {
   text-align: center;
   margin: 50px;
   color: rgb(211, 211, 211);
+  white-space: nowrap;
+  overflow: hidden;
+  width: 30em;
+  animation: type 6s steps(60, end);
 }
+@keyframes type {
+  from {
+    width: 0;
+  }
+}
+
 #hero .heading i {
   animation: blinker 1s step-start infinite;
 }
